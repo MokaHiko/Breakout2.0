@@ -146,6 +146,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Breakout\PowerUp.h" />
+    <ClInclude Include="Source\Breakout\PostProcessing\PostProcessor.h" />
     <ClInclude Include="Source\Breakout\ParticleSystem\ParticleGenerator.h" />
     <ClInclude Include="Source\Breakout\BallObject.h" />
     <ClInclude Include="Source\Breakout\Player.h" />
@@ -159,6 +161,8 @@
     <ClInclude Include="Source\Breakout\SpriteRenderer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Breakout\PowerUp.cpp" />
+    <ClCompile Include="Source\Breakout\PostProcessing\PostProcessor.cpp" />
     <ClCompile Include="Source\Breakout\ParticleSystem\ParticleGenerator.cpp" />
     <ClCompile Include="Source\Breakout\BallObject.cpp" />
     <ClCompile Include="Source\Breakout\Player.cpp" />
@@ -178,8 +182,10 @@
     <None Include="Source\Breakout\Levels\one.lvl" />
     <None Include="Source\Breakout\Levels\two.lvl" />
     <None Include="Source\Breakout\Shaders\fsParticle.shader" />
+    <None Include="Source\Breakout\Shaders\fsPostProcess.shader" />
     <None Include="Source\Breakout\Shaders\fsSprite.shader" />
     <None Include="Source\Breakout\Shaders\vsParticle.shader" />
+    <None Include="Source\Breakout\Shaders\vsPostProcess.shader" />
     <None Include="Source\Breakout\Shaders\vsSprite.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

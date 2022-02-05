@@ -48,6 +48,12 @@
     <ClInclude Include="Source\Breakout\ParticleSystem\ParticleGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Breakout\PostProcessing\PostProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Breakout\PowerUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Breakout\Game.cpp">
@@ -86,6 +92,12 @@
     <ClCompile Include="Source\Breakout\ParticleSystem\ParticleGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Breakout\PostProcessing\PostProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Breakout\PowerUp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Source\Breakout\Shaders\fsSprite.shader" />
@@ -94,5 +106,7 @@
     <None Include="Source\Breakout\Levels\two.lvl" />
     <None Include="Source\Breakout\Shaders\fsParticle.shader" />
     <None Include="Source\Breakout\Shaders\vsParticle.shader" />
+    <None Include="Source\Breakout\Shaders\fsPostProcess.shader" />
+    <None Include="Source\Breakout\Shaders\vsPostProcess.shader" />
   </ItemGroup>
 </Project>
