@@ -9,7 +9,7 @@ int main()
 	Core.Init(); 
 	while (Core.isRunning())
 	{
-		curTime = glfwGetTime(); 
+		curTime = (float)glfwGetTime(); 
 		dt = curTime - lastTime;
 		lastTime = curTime;
 

@@ -266,7 +266,8 @@ void Game::InitResources()
     ResourceManager::LoadTexture("Source/Breakout/Textures/powerup_increase.png", true, "increase_powerup");
     ResourceManager::LoadTexture("Source/Breakout/Textures/powerup_passthrough.png", true, "passthrough_powerup");
     ResourceManager::LoadTexture("Source/Breakout/Textures/powerup_speed.png", true, "speed_powerup");
-    ResourceManager::LoadTexture("Source/Breakout/Textures/powerup_sticky.png", true, "speed_sticky");
+    ResourceManager::LoadTexture("Source/Breakout/Textures/powerup_sticky.png", true, "sticky_powerup");
+    ResourceManager::LoadTexture("Source/Breakout/Textures/powerup_chaos.png", true, "chaos_powerup");
 
     // Configure shaders
     glm::mat4 proj = glm::ortho(0.0f, static_cast<float>(Width), static_cast<float>(Height), 0.0f, -1.0f, 1.0f);
@@ -473,7 +474,6 @@ void ActivatePowerUp(PowerUp& powerUp)
     }
     else if (powerUp.Type == "confuse")
     {
-        std::cout << "confuse\n";
         if (!Effects->Chaos)
             Effects->Confuse = true; // only if chaos isn’t already active
     }
